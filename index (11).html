@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SENOVSHOP — Toko Minecraft Indonesia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234fc3ff'/%3E%3Cstop offset='1' stop-color='%231c7fce'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cpolygon points='32,10 50,20 50,44 32,54 14,44 14,20' fill='none' stroke='white' stroke-width='4'/%3E%3Cpolygon points='14,20 32,30 50,20' fill='none' stroke='white' stroke-width='4'/%3E%3Cline x1='32' y1='30' x2='32' y2='54' stroke='white' stroke-width='4'/%3E%3C/svg%3E">
+</head>
+<body class="skeleton-active">
+<div class="bg-blobs" aria-hidden="true">
+  <span class="blob blob1"></span>
+  <span class="blob blob2"></span>
+  <span class="blob blob3"></span>
+  <span class="blob blob4"></span>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <a href="#" class="logo" data-nav="home">
+    <span class="logo-badge">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+        <path d="M12 2 L20 6 V18 L12 22 L4 18 V6 Z"/>
+        <path d="M4 6 L12 10 L20 6"/>
+        <path d="M12 10 V22"/>
+      </svg>
+    </span>
+    <span class="logo-text">SENOV<span class="accent">SHOP</span></span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <nav class="dropdown-nav" id="dropdownNav">
+    <a href="#" class="nav-item active" data-nav="home">Beranda</a>
+    <a href="#" class="nav-item" data-nav="pesanan">Cek Pesanan</a>
+    <a href="#" class="nav-item" data-nav="bantuan">Bantuan</a>
+    <a href="https://wa.me/6282122246350?text=Halo%20Admin%20Senovbuy%2C%20saya%20ingin%20menjual%20akun%20Minecraft%20Java%20%26%20Bedrock%20saya."
+       class="nav-cta" target="_blank" rel="noopener">Jual Akun</a>
+  </nav>
+</header>
+
+<!-- ======================================================= -->
+<!-- ===================== VIEW: HOME ======================= -->
+<!-- ======================================================= -->
+<main id="viewHome" class="view">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-terrain skeleton-block" aria-hidden="true">
+      <div class="hero-stars"></div>
+      <div class="hero-sun"></div>
+      <div class="cloud c1"></div>
+      <div class="cloud c2"></div>
+      <div class="cloud c3"></div>
+      <div class="tree t1"><span class="trunk"></span><span class="leaves"></span></div>
+      <div class="tree t2"><span class="trunk"></span><span class="leaves"></span></div>
+      <div class="tree t3"><span class="trunk"></span><span class="leaves"></span></div>
+      <div class="voxel-hero-char">
+        <span class="vc-head"></span>
+        <span class="vc-body"></span>
+        <span class="vc-arm vc-arm-l"></span>
+        <span class="vc-arm vc-arm-r"></span>
+        <span class="vc-leg vc-leg-l"></span>
+        <span class="vc-leg vc-leg-r"></span>
+      </div>
+      <div class="ground"></div>
+      <div class="blocky-strip"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">TOKO MINECRAFT<br><span class="accent-line">INDONESIA</span></h1>
+      <p class="hero-sub">Semua kebutuhan Minecraft ada di sini.</p>
+      <a href="#produk" class="btn-primary">BELI SEKARANG <span class="chev">›</span></a>
+
+      <div class="stats-row">
+        <div class="stat-card"><span class="stat-num">794rb+</span><span class="stat-label">Pelanggan</span></div>
+        <div class="stat-card"><span class="stat-num">5 Thn</span><span class="stat-label">Berdiri</span></div>
+        <div class="stat-card"><span class="stat-num">4,9<span class="star">★</span></span><span class="stat-label">Rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BANNER CAROUSEL ===== -->
+  <section class="carousel-section">
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+
+        <article class="banner banner-coins skeleton-block">
+          <div class="banner-art banner-art-coin" aria-hidden="true"></div>
+          <div class="banner-badges">
+            <span class="pill pill-warn">⚠ STOK TERBATAS</span>
+            <span class="pill pill-info">✎ BERUPA REDEEM CODE</span>
+          </div>
+          <h2 class="banner-title">MINECOINS<br><small>FOR MINECRAFT BEDROCK</small></h2>
+          <p class="banner-desc">🌐 Redeem di website resmi Minecraft</p>
+          <div class="coin-chip chip1">🪙 1600 <b>+120</b><small>MINECOINS</small></div>
+          <div class="coin-chip chip2">🪙 320<small>MINECOINS</small></div>
+          <div class="coin-chip chip3">🪙 3200 <b>+300</b><small>MINECOINS</small></div>
+        </article>
+
+        <article class="banner banner-frost skeleton-block">
+          <div class="banner-art banner-art-shield" aria-hidden="true"></div>
+          <h2 class="banner-title banner-title-lg">PERMANEN<br>BERGARANSI<br><span class="accent-amber">ANTI-HACK</span></h2>
+          <span class="btn-mini">www.senovshop.com</span>
+          <div class="snow s1"></div><div class="snow s2"></div><div class="snow s3"></div><div class="snow s4"></div>
+        </article>
+
+        <article class="banner banner-trust skeleton-block">
+          <div class="banner-art banner-art-people" aria-hidden="true"></div>
+          <span class="pill pill-gold">⭐ DIPERCAYA RIBUAN ORANG</span>
+          <div class="trust-grid">
+            <span class="trust-pill">🎥 Kreator A</span>
+            <span class="trust-pill">🎥 Kreator B</span>
+            <span class="trust-pill">🎙 Reviewer C</span>
+            <span class="trust-pill">🎥 Kreator D</span>
+            <span class="trust-pill">🎙 Kreator E</span>
+            <span class="trust-pill">🎥 Reviewer F</span>
+          </div>
+          <h2 class="banner-title banner-title-sm">DIPERCAYA OLEH<br>ORANG HEBAT!</h2>
+        </article>
+
+        <article class="banner banner-brand skeleton-block">
+          <div class="banner-art banner-art-gem" aria-hidden="true"></div>
+          <div class="brand-figures">
+            <span class="fig f1"></span><span class="fig f2"></span><span class="fig f3"></span><span class="fig f4"></span>
+          </div>
+          <h2 class="banner-title banner-title-brand">SENOVSHOP</h2>
+          <span class="btn-mini">www.senovshop.com</span>
+        </article>
+
+        <article class="banner banner-bundle skeleton-block">
+          <div class="banner-art banner-art-gift" aria-hidden="true"></div>
+          <span class="pill pill-gold">🎁 BISA DAPET CAPE LANGKA!</span>
+          <h2 class="banner-title banner-title-sm">3+ CAPES RANDOM<br><span class="accent-amber">AKUN SULTAN</span></h2>
+          <div class="mystery-row">
+            <span class="mystery-box mb1">?</span>
+            <span class="mystery-box mb2">?</span>
+            <span class="mystery-box mb3">?</span>
+          </div>
+        </article>
+
+      </div>
+      <button class="carousel-arrow prev" id="prevArrow" aria-label="Sebelumnya">‹</button>
+      <button class="carousel-arrow next" id="nextArrow" aria-label="Berikutnya">›</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- ===== KATEGORI ===== -->
+  <section class="categories" id="kategori">
+    <button class="cat-btn active" data-cat="semua"><span class="cat-icon">▦</span>Semua</button>
+    <button class="cat-btn" data-cat="premium"><span class="cat-icon">◈</span>Premium</button>
+    <button class="cat-btn" data-cat="skins"><span class="cat-icon">◫</span>Skins</button>
+    <button class="cat-btn" data-cat="capes"><span class="cat-icon">▲</span>Capes</button>
+    <button class="cat-btn" data-cat="realms"><span class="cat-icon">☰</span>Realms</button>
+    <button class="cat-btn" data-cat="minecoins"><span class="cat-icon">Ⓜ</span>Minecoins</button>
+    <button class="cat-btn" data-cat="cosmetics"><span class="cat-icon">👕</span>Cosmetics</button>
+  </section>
+
+  <!-- ===== PRODUK ===== -->
+  <section class="products" id="produk"></section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="logo-badge">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <path d="M12 2 L20 6 V18 L12 22 L4 18 V6 Z"/><path d="M4 6 L12 10 L20 6"/><path d="M12 10 V22"/>
+        </svg>
+      </span>
+      <span class="footer-logo-text">SENOVSHOP</span>
+    </div>
+    <p class="footer-desc">Toko Minecraft Indonesia terpercaya sejak 2020. Menyediakan akun premium, custom skin, realms plus, dan minecoin dengan harga terjangkau.</p>
+    <div class="footer-social">
+      <a href="#" aria-label="WhatsApp">🟢</a>
+      <a href="#" aria-label="Instagram">📸</a>
+      <a href="#" aria-label="TikTok">🎵</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Kategori</h4>
+        <a href="#">Minecraft Premium</a>
+        <a href="#">Skins</a>
+        <a href="#">Capes</a>
+        <a href="#">Realms</a>
+        <a href="#">Minecoins</a>
+        <a href="#">Cosmetics</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">FAQ</a>
+        <a href="#" data-nav="pesanan">Cek Pesanan</a>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Ketentuan Layanan</a>
+        <a href="#">WhatsApp Support</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <p>📍 Menara 165 Lt.14 Unit E Jl. TB Simatupang No.Kav.1, Kel. Cilandak Timur, Kec. Pasar Minggu, Jakarta Selatan, DKI Jakarta 12560, Indonesia</p>
+        <p>📞 +62 877-6077-8015</p>
+        <p>✉️ support@senovshop.com</p>
+        <p>✅ 24/7 Customer Service</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 SENOVSHOP — Semua transaksi aman &amp; bergaransi.</p>
+  </footer>
+
+</main>
+
+<!-- ======================================================= -->
+<!-- =================== VIEW: CEK PESANAN =================== -->
+<!-- ======================================================= -->
+<main id="viewPesanan" class="view view-hidden">
+  <section class="mini-hero">
+    <div class="mini-hero-bg"></div>
+    <h1>Cek Status Pesanan</h1>
+    <p>Masukkan Order ID untuk melihat status dan detail pembayaran pesanan Anda.</p>
+  </section>
+  <section class="pesanan-card-wrap">
+    <div class="pesanan-card">
+      <div class="pesanan-card-head">Cari Pesanan</div>
+      <div class="pesanan-card-body">
+        <input type="text" placeholder="Contoh: SENOV-TT6TQM">
+        <button class="btn-search">Cari Pesanan</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ======================================================= -->
+<!-- ===================== VIEW: BANTUAN ===================== -->
+<!-- ======================================================= -->
+<main id="viewBantuan" class="view view-hidden">
+  <section class="mini-hero mini-hero-alt">
+    <div class="mini-hero-bg"></div>
+    <h1>Ajukan Komplain</h1>
+    <p>Isi form di bawah, tim kami akan membantu menindaklanjuti kendalamu.</p>
+  </section>
+  <section class="form-wrap">
+    <label class="form-label">Nomor WhatsApp</label>
+    <input type="text" placeholder="081234567890">
+
+    <label class="form-label">Nama Produk *</label>
+    <select><option>-- Pilih produk --</option></select>
+
+    <label class="form-label">Alasan Komplain *</label>
+    <select disabled><option>-- Pilih produk dulu --</option></select>
+
+    <label class="form-label">Deskripsi Komplain (opsional)</label>
+    <textarea maxlength="2000" placeholder="Jelaskan keluhan Anda dengan detail..." id="complaintText"></textarea>
+    <span class="char-count"><span id="charCount">0</span>/2000</span>
+
+    <label class="form-label">Bukti Pembelian (opsional)</label>
+    <div class="dropzone">
+      <span class="dropzone-icon">⬆</span>
+      <strong>Klik untuk pilih file</strong>
+      <small>JPG, PNG, WEBP, atau PDF • Maks 5MB</small>
+    </div>
+
+    <button class="btn-submit">Kirim Komplain</button>
+  </section>
+</main>
+
+<!-- ===== FLOATING ELEMENTS ===== -->
+<a href="https://wa.me/6282122246350" target="_blank" rel="noopener" class="floating-wa" aria-label="Tanya Admin via WhatsApp">🟢</a>
+
+<div class="toast" id="purchaseToast">
+  <span class="toast-icon">🛍️</span>
+  <span class="toast-text"><strong id="toastName">Jo Stecu</strong> baru saja membeli <strong id="toastItem">Builder Cape</strong> senilai <strong id="toastPrice">Rp 15.402</strong></span>
+  <button class="toast-close" id="toastClose" aria-label="Tutup">✕</button>
+</div>
+
+<script src="icons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
